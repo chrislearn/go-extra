@@ -32,3 +32,7 @@ func ToUint32(str string, defaultVal uint32) uint32{
 func ToInt32(str string, defaultVal int32) int32{
   return int32(ParseInt(str, int64(defaultVal), 10, 32))
 }
+
+func ToInt(str string, defaultVal int) int{
+  return int(ParseInt(str, int64(defaultVal), 10, 32))
+}
